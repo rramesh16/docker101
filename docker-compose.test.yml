@@ -1,0 +1,10 @@
+version: '2'
+ nginx:
+    build: docker101/ 
+    container_name: nginx_first
+    networks:
+      - front
+    expose:
+      - "80"
+    ports:
+      - "8080:8080"
